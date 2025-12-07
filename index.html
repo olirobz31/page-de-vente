@@ -1,1253 +1,794 @@
- <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Formulaire de Devis Multi-Étapes Premium | Vente</title>
-
+  
+  <!-- SEO de base -->
+  <title>Formulaire de Devis Multi-Étapes Premium | HTML CSS JS PHP</title>
+  <meta name="description" content="Formulaire de contact multi-étapes premium pour votre site web. Design moderne, mode sombre/clair, anti-spam, emails HTML stylisés, upload fichiers. Installation en 15 minutes. 79€ licence unique.">
+  <meta name="keywords" content="formulaire de devis, formulaire multi-étapes, formulaire contact premium, formulaire PHP, template formulaire, formulaire site web">
+  <meta name="author" content="DocSmart">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://olirobz31.github.io/page-de-vente/">
+  
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Formulaire de Devis Multi-Étapes Premium | 79€">
+  <meta property="og:description" content="Le formulaire de contact le plus professionnel pour votre site web. Design premium, multi-étapes, mode sombre/clair, anti-spam, emails HTML. Installation en 15 min.">
+  <meta property="og:url" content="https://olirobz31.github.io/page-de-vente/">
+  <meta property="og:image" content="https://olirobz31.github.io/page-de-vente/preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="DocSmart">
+  <meta property="product:price:amount" content="79">
+  <meta property="product:price:currency" content="EUR">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Formulaire de Devis Multi-Étapes Premium | 79€">
+  <meta name="twitter:description" content="Le formulaire de contact le plus professionnel pour votre site web. Design premium, multi-étapes, anti-spam, emails HTML. Installation en 15 min.">
+  <meta name="twitter:image" content="https://olirobz31.github.io/page-de-vente/preview.jpg">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Schema.org Product (Rich Snippets Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Formulaire de Devis Multi-Étapes Premium",
+    "description": "Formulaire de contact multi-étapes premium avec design moderne, mode sombre/clair, anti-spam, emails HTML stylisés et upload de fichiers. Pack complet HTML, CSS, JS, PHP avec guide d'installation.",
+    "image": "https://olirobz31.github.io/page-de-vente/preview.jpg",
+    "brand": {
+      "@type": "Brand",
+      "name": "DocSmart"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "79",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://olirobz31.github.io/page-de-vente/",
+      "priceValidUntil": "2025-12-31"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "1"
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema pour Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ai-je besoin de compétences techniques pour installer ce formulaire ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non ! Le guide PDF explique tout étape par étape avec des captures d'écran. Si vous savez uploader des fichiers via FTP, vous pourrez installer ce formulaire."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le formulaire fonctionne-t-il avec mon hébergeur ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, tant que votre hébergeur supporte PHP 7.4 ou supérieur. Compatible avec tous les hébergeurs classiques (Hostinger, OVH, O2Switch, etc.)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je personnaliser le design du formulaire ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolument ! Tous les fichiers sont fournis et commentés. Vous pouvez modifier les couleurs, textes, champs facilement dans les fichiers CSS et HTML."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "L'email fonctionne-t-il avec Gmail ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, le formulaire utilise Gmail SMTP par défaut. Mais il fonctionne aussi avec Outlook, OVH, et tout service SMTP. Instructions incluses dans le guide."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je utiliser le formulaire sur plusieurs sites ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui ! La licence unique vous permet d'utiliser le formulaire sur autant de sites que vous voulez. Parfait pour les agences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Y a-t-il un support technique ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, support par email pendant 30 jours + 1 installation assistée gratuite si besoin."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je obtenir un remboursement ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, garantie satisfait ou remboursé 14 jours. Si le formulaire ne correspond pas à vos attentes, demandez un remboursement complet."
+        }
+      }
+    ]
+  }
+  </script>
 
   <style>
-
     * {
-
       margin: 0;
-
       padding: 0;
-
       box-sizing: border-box;
-
     }
-
-   
-
+    
     body {
-
       font-family: 'Poppins', sans-serif;
-
       line-height: 1.6;
-
       color: #333;
-
       overflow-x: hidden;
-
     }
-
 
     /* Hero Section */
-
     .hero {
-
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
       color: white;
-
       padding: 100px 20px 120px;
-
       text-align: center;
-
       position: relative;
-
       overflow: hidden;
-
     }
-
 
     .hero::before {
-
       content: '';
-
       position: absolute;
-
       top: 0;
-
       left: 0;
-
       right: 0;
-
       bottom: 0;
-
       background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-
       opacity: 0.3;
-
     }
-
 
     .hero-content {
-
       position: relative;
-
       z-index: 1;
-
       max-width: 800px;
-
       margin: 0 auto;
-
     }
-
 
     .badge {
-
       display: inline-block;
-
       background: rgba(255, 255, 255, 0.2);
-
       backdrop-filter: blur(10px);
-
       padding: 8px 20px;
-
       border-radius: 50px;
-
       font-size: 0.9em;
-
       margin-bottom: 20px;
-
       font-weight: 600;
-
     }
-
 
     h1 {
-
       font-size: 3.5em;
-
       font-weight: 800;
-
       margin-bottom: 20px;
-
       line-height: 1.2;
-
     }
-
 
     .hero p {
-
       font-size: 1.3em;
-
       margin-bottom: 40px;
-
       opacity: 0.95;
-
     }
-
 
     .price {
-
       font-size: 4em;
-
       font-weight: 800;
-
       margin: 30px 0 10px;
-
     }
-
 
     .price-detail {
-
       font-size: 1.1em;
-
       opacity: 0.9;
-
       margin-bottom: 40px;
-
     }
-
 
     .cta-primary {
-
       display: inline-block;
-
       background: white;
-
       color: #667eea;
-
       padding: 18px 50px;
-
       border-radius: 50px;
-
       font-size: 1.2em;
-
       font-weight: 700;
-
       text-decoration: none;
-
       box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-
     }
-
 
     .cta-primary:hover {
-
       transform: translateY(-3px);
-
       box-shadow: 0 15px 50px rgba(0,0,0,0.3);
-
     }
-
 
     /* Features Section */
-
     .features {
-
       padding: 80px 20px;
-
       background: #f8f9fa;
-
     }
-
 
     .container {
-
       max-width: 1200px;
-
       margin: 0 auto;
-
     }
-
 
     .section-title {
-
       text-align: center;
-
       font-size: 2.5em;
-
       margin-bottom: 20px;
-
       color: #2d3748;
-
     }
-
 
     .section-subtitle {
-
       text-align: center;
-
       font-size: 1.2em;
-
       color: #718096;
-
       margin-bottom: 60px;
-
     }
-
 
     .features-grid {
-
       display: grid;
-
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
       gap: 40px;
-
       margin-top: 50px;
-
     }
-
 
     .feature-card {
-
       background: white;
-
       padding: 40px;
-
       border-radius: 20px;
-
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-
     }
-
 
     .feature-card:hover {
-
       transform: translateY(-10px);
-
       box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-
     }
-
 
     .feature-icon {
-
       font-size: 3em;
-
       margin-bottom: 20px;
-
     }
-
 
     .feature-card h3 {
-
       font-size: 1.5em;
-
       margin-bottom: 15px;
-
       color: #2d3748;
-
     }
-
 
     .feature-card p {
-
       color: #4e5d74;
-
       line-height: 1.8;
-
     }
-
 
     /* Demo Section */
-
     .demo {
-
       padding: 80px 20px;
-
       background: white;
-
     }
-
 
     .demo-video {
-
       max-width: 900px;
-
       margin: 40px auto;
-
       border-radius: 20px;
-
       overflow: hidden;
-
       box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-
     }
-
 
     .demo-placeholder {
-
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
       height: 500px;
-
       display: flex;
-
       align-items: center;
-
       justify-content: center;
-
       color: white;
-
       font-size: 2em;
-
       font-weight: 700;
-
     }
-
 
     /* Benefits Section */
-
     .benefits {
-
       padding: 80px 20px;
-
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
       color: white;
-
     }
-
 
     .benefits-list {
-
       max-width: 700px;
-
       margin: 40px auto;
-
     }
-
 
     .benefit-item {
-
       display: flex;
-
       align-items: flex-start;
-
       margin-bottom: 30px;
-
       background: rgba(255, 255, 255, 0.1);
-
       backdrop-filter: blur(10px);
-
       padding: 25px;
-
       border-radius: 15px;
-
     }
-
 
     .benefit-item .icon {
-
       font-size: 2em;
-
       margin-right: 20px;
-
       flex-shrink: 0;
-
     }
-
 
     .benefit-item h3 {
-
       font-size: 1.3em;
-
       margin-bottom: 8px;
-
     }
-
 
     .benefit-item p {
-
       opacity: 0.9;
-
       line-height: 1.6;
-
     }
 
-
-    .section-subtitle {
-
-     text-align: center;
-
-     font-size: 1.2em;
-
-     color: white;
-
-     margin-bottom: 60px;
-
-  }
-
+    .benefits .section-subtitle {
+      text-align: center;
+      font-size: 1.2em;
+      color: white;
+      margin-bottom: 60px;
+    }
 
     /* Tech Stack */
-
     .tech-stack {
-
       padding: 80px 20px;
-
       background: #657698;
-
       color: white;
-
     }
-
 
     .tech-grid {
-
       display: grid;
-
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
       gap: 30px;
-
       max-width: 900px;
-
       margin: 40px auto;
-
     }
-
 
     .tech-item {
-
       text-align: center;
-
       padding: 30px;
-
       background: rgba(255, 255, 255, 0.05);
-
       border-radius: 15px;
-
       transition: transform 0.3s ease;
-
     }
-
 
     .tech-item:hover {
-
       transform: scale(1.05);
-
       background: rgba(255, 255, 255, 0.1);
-
     }
-
 
     .tech-item .tech-icon {
-
       font-size: 3em;
-
       margin-bottom: 15px;
-
     }
-
 
     /* Pricing Table */
-
     .pricing {
-
       padding: 80px 20px;
-
       background: #f8f9fa;
-
     }
-
 
     .pricing-table {
-
       max-width: 400px;
-
       margin: 40px auto;
-
       background: white;
-
       padding: 50px;
-
       border-radius: 20px;
-
       box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-
       text-align: center;
-
     }
-
 
     .pricing-table .price-big {
-
       font-size: 4em;
-
       font-weight: 800;
-
       color: #667eea;
-
       margin: 20px 0;
-
     }
-
 
     .pricing-table ul {
-
       list-style: none;
-
       margin: 30px 0;
-
       text-align: left;
-
     }
-
 
     .pricing-table li {
-
       padding: 15px 0;
-
       border-bottom: 1px solid #e2e8f0;
-
       display: flex;
-
       align-items: center;
-
     }
-
 
     .pricing-table li::before {
-
       content: '✓';
-
       color: #48bb78;
-
       font-weight: bold;
-
       margin-right: 15px;
-
       font-size: 1.3em;
-
     }
-
 
     /* FAQ */
-
     .faq {
-
       padding: 80px 20px;
-
       background: white;
-
     }
-
 
     .faq-list {
-
       max-width: 800px;
-
       margin: 40px auto;
-
     }
-
 
     .faq-item {
-
       background: #f8f9fa;
-
       padding: 30px;
-
       margin-bottom: 20px;
-
       border-radius: 15px;
-
       border-left: 4px solid #667eea;
-
     }
-
 
     .faq-item h3 {
-
       color: #2d3748;
-
       margin-bottom: 15px;
-
       font-size: 1.2em;
-
     }
-
 
     .faq-item p {
-
       color: #718096;
-
       line-height: 1.8;
-
     }
-
 
     /* Final CTA */
-
     .final-cta {
-
       padding: 100px 20px;
-
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
       color: white;
-
       text-align: center;
-
     }
-
 
     .final-cta h2 {
-
       font-size: 3em;
-
       margin-bottom: 20px;
-
     }
-
 
     .final-cta p {
-
       font-size: 1.3em;
-
       margin-bottom: 40px;
-
       opacity: 0.95;
-
     }
-
 
     /* Footer */
-
     footer {
-
       background: #2d3748;
-
       color: white;
-
       padding: 40px 20px;
-
       text-align: center;
-
     }
-
 
     footer p {
-
       opacity: 0.7;
-
     }
-
 
     /* Responsive */
-
     @media (max-width: 768px) {
-
       h1 {
-
         font-size: 2.5em;
-
       }
-
-     
-
+      
       .price {
-
         font-size: 3em;
-
       }
-
 
       .features-grid {
-
         grid-template-columns: 1fr;
-
       }
-
 
       .demo-placeholder {
-
         height: 300px;
-
         font-size: 1.5em;
-
       }
-
     }
-
   </style>
-
 </head>
 
 <body>
 
-
   <!-- Hero Section -->
-
   <section class="hero">
-
     <div class="hero-content">
-
       <div class="badge">🚀 Formulaire Prêt à l'Emploi</div>
-
       <h1>Formulaire de Devis Multi-Étapes Premium</h1>
-
       <p>Le formulaire de contact le plus professionnel et élégant pour votre site web. Installation en 15 minutes, design moderne, 100% fonctionnel.</p>
-
-     
-
+      
       <div class="price">79€</div>
-
       <div class="price-detail">Licence unique • Mise à jour gratuite • Support inclus</div>
-
-     
-
+      
       <a href="https://robzoli.gumroad.com/l/formulaire-devis" class="cta-primary">💳 Acheter Maintenant</a>
-
     </div>
-
   </section>
-
 
   <!-- Features Section -->
-
   <section class="features">
-
     <div class="container">
-
       <h2 class="section-title">✨ Caractéristiques Premium</h2>
-
       <p class="section-subtitle">Tout ce dont vous avez besoin pour un formulaire professionnel</p>
-
-     
-
+      
       <div class="features-grid">
-
         <div class="feature-card">
-
           <div class="feature-icon">🎨</div>
-
           <h3>Design Premium</h3>
-
           <p>Interface moderne avec animations fluides, mode sombre/clair, et effets glassmorphisme. Design qui impressionne vos visiteurs dès le premier regard.</p>
-
         </div>
 
-
         <div class="feature-card">
-
           <div class="feature-icon">📱</div>
-
           <h3>100% Responsive</h3>
-
           <p>Parfaitement adapté à tous les écrans : mobile, tablette, desktop. Votre formulaire sera magnifique sur tous les appareils.</p>
-
         </div>
 
-
         <div class="feature-card">
-
           <div class="feature-icon">🔒</div>
-
           <h3>Sécurisé</h3>
-
           <p>Protection anti-spam avec honeypot, validation côté serveur, nettoyage des données. Vos données sont protégées contre les bots et les injections.</p>
-
         </div>
 
-
         <div class="feature-card">
-
           <div class="feature-icon">⚡</div>
-
           <h3>Multi-Étapes</h3>
-
           <p>Formulaire divisé en 4 étapes avec barre de progression. Améliore le taux de conversion et l'expérience utilisateur.</p>
-
         </div>
 
-
         <div class="feature-card">
-
           <div class="feature-icon">📧</div>
-
           <h3>Email HTML Stylisé</h3>
-
           <p>Recevez de beaux emails HTML avec design professionnel et émojis. Tous les détails du formulaire bien organisés.</p>
-
         </div>
 
-
         <div class="feature-card">
-
           <div class="feature-icon">🛠️</div>
-
           <h3>Installation Simple</h3>
-
           <p>Guide PDF détaillé avec captures d'écran. Installation en 15 minutes sans compétences techniques avancées requises.</p>
-
         </div>
 
-
         <div class="feature-card">
-
           <div class="feature-icon">📎</div>
-
           <h3>Upload de Fichiers</h3>
-
           <p>Vos clients peuvent joindre des fichiers (images, PDFs, etc.) directement dans le formulaire.</p>
-
         </div>
 
-
         <div class="feature-card">
-
           <div class="feature-icon">♿</div>
-
           <h3>Accessible</h3>
-
           <p>Conforme aux normes d'accessibilité (ARIA, navigation clavier). Utilisable par tous, y compris les personnes en situation de handicap.</p>
-
         </div>
-
 
         <div class="feature-card">
-
           <div class="feature-icon">🎯</div>
-
           <h3>Personnalisable</h3>
-
           <p>Modifiez facilement les couleurs, textes, champs du formulaire. Adaptez-le à votre charte graphique en quelques minutes.</p>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
 
   <!-- Demo Section -->
-
   <section class="demo">
-
     <div class="container">
-
       <h2 class="section-title">👀 Aperçu du Formulaire</h2>
-
       <p class="section-subtitle">Découvrez le design premium et les animations fluides</p>
-
-     
-
+      
       <div class="demo-video">
-
         <div style="padding:47.19% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1142063827?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Vidéo-formulaire"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
       </div>
-
     </div>
-
   </section>
-
 
   <!-- Benefits Section -->
-
   <section class="benefits">
-
     <div class="container">
-
       <h2 class="section-title">🎁 Ce Que Vous Obtenez</h2>
-
       <p class="section-subtitle">Un pack complet pour un formulaire professionnel</p>
-
-     
-
+      
       <div class="benefits-list">
-
         <div class="benefit-item">
-
           <div class="icon">📦</div>
-
           <div>
-
             <h3>Pack Complet</h3>
-
             <p>Tous les fichiers sources (HTML, CSS, JavaScript, PHP) + dossier PHPMailer inclus. Prêt à uploader sur votre serveur.</p>
-
           </div>
-
         </div>
 
-
         <div class="benefit-item">
-
           <div class="icon">📖</div>
-
           <div>
-
             <h3>Guide d'Installation PDF</h3>
-
             <p>Documentation complète avec captures d'écran, explications pas à pas, et solutions aux problèmes courants.</p>
-
           </div>
-
         </div>
 
-
         <div class="benefit-item">
-
           <div class="icon">🔄</div>
-
           <div>
-
             <h3>Mises à Jour Gratuites</h3>
-
             <p>Accès gratuit aux futures versions avec améliorations et nouvelles fonctionnalités.</p>
-
           </div>
-
         </div>
 
-
         <div class="benefit-item">
-
           <div class="icon">💬</div>
-
           <div>
-
             <h3>Support Technique</h3>
-
             <p>1 installation gratuite assistée + support par email pendant 30 jours pour toute question.</p>
-
           </div>
-
         </div>
-
 
         <div class="benefit-item">
-
           <div class="icon">⚖️</div>
-
           <div>
-
             <h3>Licence Unique</h3>
-
             <p>Utilisez le formulaire sur autant de sites que vous voulez. Idéal pour les agences et freelances.</p>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
 
   <!-- Tech Stack -->
-
   <section class="tech-stack">
-
     <div class="container">
-
       <h2 class="section-title">💻 Technologies Utilisées</h2>
-
       <p class="section-subtitle">Des technologies modernes et éprouvées</p>
-
-     
-
+      
       <div class="tech-grid">
-
         <div class="tech-item">
-
           <div class="tech-icon">📄</div>
-
           <strong>HTML5</strong>
-
         </div>
-
         <div class="tech-item">
-
           <div class="tech-icon">🎨</div>
-
           <strong>CSS3</strong>
-
         </div>
-
         <div class="tech-item">
-
           <div class="tech-icon">⚡</div>
-
           <strong>JavaScript</strong>
-
         </div>
-
         <div class="tech-item">
-
           <div class="tech-icon">🐘</div>
-
           <strong>PHP 7.4+</strong>
-
         </div>
-
         <div class="tech-item">
-
           <div class="tech-icon">📬</div>
-
           <strong>PHPMailer</strong>
-
         </div>
-
         <div class="tech-item">
-
           <div class="tech-icon">🔐</div>
-
           <strong>SMTP Gmail</strong>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
 
   <!-- Pricing -->
-
   <section class="pricing">
-
     <div class="container">
-
       <h2 class="section-title">💰 Tarification Simple</h2>
-
       <p class="section-subtitle">Un prix unique, sans abonnement caché</p>
-
-     
-
+      
       <div class="pricing-table">
-
         <h3>Pack Complet</h3>
-
         <div class="price-big">79€</div>
-
         <p style="color: #718096; margin-bottom: 30px;">Paiement unique • Pas d'abonnement</p>
-
-       
-
+        
         <ul>
-
           <li>Tous les fichiers sources</li>
-
           <li>Guide PDF détaillé</li>
-
           <li>PHPMailer inclus</li>
-
           <li>Design premium</li>
-
           <li>Multi-étapes + animations</li>
-
           <li>Mode sombre/clair</li>
-
           <li>Anti-spam intégré</li>
-
           <li>Email HTML stylisé</li>
-
           <li>Upload de fichiers</li>
-
           <li>100% responsive</li>
-
           <li>Support 30 jours</li>
-
           <li>Mises à jour gratuites</li>
-
           <li>Licence illimitée</li>
-
         </ul>
-
-       
-
+        
         <a href="https://robzoli.gumroad.com/l/formulaire-devis" class="cta-primary" style="margin-top: 20px;">Acheter Maintenant</a>
-
       </div>
-
     </div>
-
   </section>
-
 
   <!-- FAQ -->
-
   <section class="faq">
-
     <div class="container">
-
       <h2 class="section-title">❓ Questions Fréquentes</h2>
-
       <p class="section-subtitle">Tout ce que vous devez savoir</p>
-
-     
-
+      
       <div class="faq-list">
-
         <div class="faq-item">
-
           <h3>Ai-je besoin de compétences techniques ?</h3>
-
           <p>Non ! Le guide PDF explique tout étape par étape avec des captures d'écran. Si vous savez uploader des fichiers via FTP, vous pourrez installer ce formulaire.</p>
-
         </div>
 
-
         <div class="faq-item">
-
           <h3>Fonctionne-t-il avec mon hébergeur ?</h3>
-
           <p>Oui, tant que votre hébergeur supporte PHP 7.4 ou supérieur. Compatible avec tous les hébergeurs classiques (Hostinger, OVH, O2Switch, etc.).</p>
-
         </div>
 
-
         <div class="faq-item">
-
           <h3>Puis-je personnaliser le design ?</h3>
-
           <p>Absolument ! Tous les fichiers sont fournis et commentés. Vous pouvez modifier les couleurs, textes, champs facilement dans les fichiers CSS et HTML.</p>
-
         </div>
 
-
         <div class="faq-item">
-
           <h3>L'email fonctionne avec Gmail ?</h3>
-
           <p>Oui, le formulaire utilise Gmail SMTP par défaut. Mais il fonctionne aussi avec Outlook, OVH, et tout service SMTP. Instructions incluses dans le guide.</p>
-
         </div>
 
-
         <div class="faq-item">
-
           <h3>Puis-je l'utiliser sur plusieurs sites ?</h3>
-
           <p>Oui ! La licence unique vous permet d'utiliser le formulaire sur autant de sites que vous voulez. Parfait pour les agences.</p>
-
         </div>
 
-
         <div class="faq-item">
-
           <h3>Y a-t-il un support technique ?</h3>
-
           <p>Oui, support par email pendant 30 jours + 1 installation assistée gratuite si besoin. Nous sommes là pour vous aider.</p>
-
         </div>
-
 
         <div class="faq-item">
-
           <h3>Puis-je obtenir un remboursement ?</h3>
-
           <p>Oui, garantie satisfait ou remboursé 14 jours. Si le formulaire ne correspond pas à vos attentes, demandez un remboursement complet.</p>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
 
   <!-- Final CTA -->
-
   <section class="final-cta">
-
     <div class="container">
-
       <h2>Prêt à Améliorer Votre Site ?</h2>
-
       <p>Obtenez le formulaire le plus professionnel du marché en quelques minutes</p>
-
       <a href="https://robzoli.gumroad.com/l/formulaire-devis" class="cta-primary">💳 Acheter Maintenant - 79€</a>
-
       <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">Paiement sécurisé • Accès immédiat • Garantie 14 jours</p>
-
     </div>
-
   </section>
 
-
   <!-- Footer -->
-
   <footer>
-
     <div class="container">
-
-      <p>© 2025 Formulaire Premium - Tous droits réservés</p>
-
+      <p>© 2025 DocSmart - Tous droits réservés</p>
       <p style="margin-top: 10px;">Contact : olirobz31@gmail.com</p>
-
     </div>
-
   </footer>
-
 
 </body>
 
-</html> 
+</html>
